@@ -252,10 +252,10 @@
 
     <!-- SENSORS -->
     <!-- lidar -->
-    <xacro:include filename="$(find ros_components_description)/urdf/slamtec_rplidar_s1.urdf.xacro" ns="lidar" />
+    <xacro:include filename="$(find ros_components_description)/urdf/slamtec_rplidar.urdf.xacro" ns="lidar" />
 
     <!-- evaluate the macro and place the sensor on robot -->
-    <xacro:lidar.slamtec_rplidar_s1
+    <xacro:lidar.slamtec_rplidar
       parent_link="chassis"
       xyz="0.0 0.0 0.1"
       rpy="0.0 0.0 0.0" />
